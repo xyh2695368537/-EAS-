@@ -36,6 +36,14 @@ class Admin(Base):
     def add_school(self,name,addr):
         School(name,addr)
 
+    def add_course(self,name,price,school_name):
+        Course(name,price,school_name)
+
+        # 学校绑定课程
+        school_obj = School.select(school_name)
+        school_obj.course_List.append(name)
+        school_obj.save()
+
 class Student(Base):
     def __init__(self,name,pwd):
         self.pwd = pwd
@@ -65,4 +73,10 @@ class School(Base):
         super(School,self).__init__(name)
 
 class Course(Base):
-    pass
+    def __init__(self, name,price,school_name):
+        self.price = price
+        self.school_name = school_name
+        self.student_list = []
+        self.teacher = None
+
+        super(Course,self).__init__(name)

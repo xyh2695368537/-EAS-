@@ -12,7 +12,7 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(807, 600)
+        Form.resize(805, 664)
         Form.setStyleSheet("")
         self.horizontalLayout_10 = QtWidgets.QHBoxLayout(Form)
         self.horizontalLayout_10.setObjectName("horizontalLayout_10")
@@ -208,7 +208,7 @@ class Ui_Form(object):
 "padding:5px;\n"
 "background-color: rgb(255, 255, 255);")
         self.lineEdit_7.setText("")
-        self.lineEdit_7.setEchoMode(QtWidgets.QLineEdit.EchoMode.Password)
+        self.lineEdit_7.setEchoMode(QtWidgets.QLineEdit.EchoMode.Normal)
         self.lineEdit_7.setCursorPosition(0)
         self.lineEdit_7.setObjectName("lineEdit_7")
         self.verticalLayout_8.addWidget(self.lineEdit_7)
@@ -379,13 +379,123 @@ class Ui_Form(object):
         self.verticalLayout_5.addItem(spacerItem12)
         self.horizontalLayout_6.addLayout(self.verticalLayout_5)
         self.stackedWidget.addWidget(self.page_2)
+        self.page_4 = QtWidgets.QWidget()
+        self.page_4.setObjectName("page_4")
+        self.horizontalLayout_17 = QtWidgets.QHBoxLayout(self.page_4)
+        self.horizontalLayout_17.setObjectName("horizontalLayout_17")
+        self.verticalLayout_9 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_9.setObjectName("verticalLayout_9")
+        spacerItem13 = QtWidgets.QSpacerItem(18, 18, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
+        self.verticalLayout_9.addItem(spacerItem13)
+        self.horizontalLayout_15 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_15.setObjectName("horizontalLayout_15")
+        spacerItem14 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
+        self.horizontalLayout_15.addItem(spacerItem14)
+        self.verticalLayout_10 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_10.setSpacing(29)
+        self.verticalLayout_10.setObjectName("verticalLayout_10")
+        self.label_4 = QtWidgets.QLabel(parent=self.page_4)
+        font = QtGui.QFont()
+        font.setFamily("微软雅黑")
+        font.setPointSize(90)
+        font.setBold(True)
+        self.label_4.setFont(font)
+        self.label_4.setStyleSheet("color: rgb(85, 170, 127);")
+        self.label_4.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.label_4.setObjectName("label_4")
+        self.verticalLayout_10.addWidget(self.label_4)
+        self.comboBox = QtWidgets.QComboBox(parent=self.page_4)
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        self.comboBox.setFont(font)
+        self.comboBox.setStyleSheet("border-radius:15px;\n"
+"padding:5px;\n"
+"background-color: rgb(255, 255, 255);")
+        self.comboBox.setObjectName("comboBox")
+        self.verticalLayout_10.addWidget(self.comboBox)
+        self.lineEdit_8 = QtWidgets.QLineEdit(parent=self.page_4)
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        self.lineEdit_8.setFont(font)
+        self.lineEdit_8.setStyleSheet("border-radius:15px;\n"
+"padding:5px;\n"
+"background-color: rgb(255, 255, 255);")
+        self.lineEdit_8.setObjectName("lineEdit_8")
+        self.verticalLayout_10.addWidget(self.lineEdit_8)
+        self.lineEdit_9 = QtWidgets.QLineEdit(parent=self.page_4)
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        self.lineEdit_9.setFont(font)
+        self.lineEdit_9.setStyleSheet("border-radius:15px;\n"
+"padding:5px;\n"
+"background-color: rgb(255, 255, 255);")
+        self.lineEdit_9.setText("")
+        self.lineEdit_9.setEchoMode(QtWidgets.QLineEdit.EchoMode.Normal)
+        self.lineEdit_9.setCursorPosition(0)
+        self.lineEdit_9.setObjectName("lineEdit_9")
+        self.verticalLayout_10.addWidget(self.lineEdit_9)
+        self.horizontalLayout_16 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_16.setContentsMargins(-1, -1, 0, 5)
+        self.horizontalLayout_16.setSpacing(180)
+        self.horizontalLayout_16.setObjectName("horizontalLayout_16")
+        self.pushButton_8 = QtWidgets.QPushButton(parent=self.page_4)
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.pushButton_8.setFont(font)
+        self.pushButton_8.setStyleSheet("QPushButton{\n"
+"    border-radius:15px;\n"
+"    color: rgb(255, 255, 255);\n"
+"    background-color: rgb(85, 170, 127);\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: rgb(95, 191, 141);\n"
+"}\n"
+"\n"
+"QPushButton:pressed{\n"
+"    background-color: rgb(73, 147, 109);\n"
+"}\n"
+"\n"
+"\n"
+"\n"
+"")
+        self.pushButton_8.setObjectName("pushButton_8")
+        self.horizontalLayout_16.addWidget(self.pushButton_8)
+        self.pushButton_9 = QtWidgets.QPushButton(parent=self.page_4)
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.pushButton_9.setFont(font)
+        self.pushButton_9.setStyleSheet("QPushButton{\n"
+"    border-radius:15px;\n"
+"    color: rgb(255, 255, 255);\n"
+"    background-color: rgb(152, 152, 152);\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: rgb(190, 190, 190);\n"
+"}\n"
+"QPushButton:pressed{\n"
+"    \n"
+"    background-color: rgb(131, 131, 131);\n"
+"}")
+        self.pushButton_9.setObjectName("pushButton_9")
+        self.horizontalLayout_16.addWidget(self.pushButton_9)
+        self.verticalLayout_10.addLayout(self.horizontalLayout_16)
+        self.horizontalLayout_15.addLayout(self.verticalLayout_10)
+        spacerItem15 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
+        self.horizontalLayout_15.addItem(spacerItem15)
+        self.verticalLayout_9.addLayout(self.horizontalLayout_15)
+        spacerItem16 = QtWidgets.QSpacerItem(17, 95, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
+        self.verticalLayout_9.addItem(spacerItem16)
+        self.horizontalLayout_17.addLayout(self.verticalLayout_9)
+        self.stackedWidget.addWidget(self.page_4)
         self.verticalLayout_2.addWidget(self.stackedWidget)
         self.horizontalLayout_8.addLayout(self.verticalLayout_2)
         self.horizontalLayout_7.addWidget(self.widget)
         self.horizontalLayout_10.addWidget(self.widget_2)
 
         self.retranslateUi(Form)
-        self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(3)
         self.pushButton.clicked.connect(Form.login) # type: ignore
         self.pushButton_2.clicked.connect(Form.open_register_page) # type: ignore
         self.pushButton_4.clicked.connect(Form.open_login_page) # type: ignore
@@ -395,6 +505,10 @@ class Ui_Form(object):
         self.lineEdit_7.returnPressed.connect(Form.add_school) # type: ignore
         self.lineEdit_5.returnPressed.connect(Form.register) # type: ignore
         self.lineEdit_2.returnPressed.connect(Form.login) # type: ignore
+        self.pushButton_7.clicked.connect(Form.add_school) # type: ignore
+        self.pushButton_8.clicked.connect(Form.add_course) # type: ignore
+        self.pushButton_9.clicked.connect(Form.close) # type: ignore
+        self.lineEdit_9.returnPressed.connect(Form.add_course) # type: ignore
         QtCore.QMetaObject.connectSlotsByName(Form)
 
     def retranslateUi(self, Form):
@@ -409,14 +523,19 @@ class Ui_Form(object):
         self.checkBox_3.setText(_translate("Form", "管理员登录"))
         self.pushButton.setText(_translate("Form", "登录"))
         self.pushButton_2.setText(_translate("Form", "注册"))
-        self.label_3.setText(_translate("Form", "创建机构"))
+        self.label_3.setText(_translate("Form", "创建学校"))
         self.lineEdit_6.setPlaceholderText(_translate("Form", "机构名称"))
         self.lineEdit_7.setPlaceholderText(_translate("Form", "机构地址"))
         self.pushButton_7.setText(_translate("Form", "注册"))
-        self.pushButton_6.setText(_translate("Form", "返回"))
+        self.pushButton_6.setText(_translate("Form", "关闭"))
         self.label_2.setText(_translate("Form", "管理员注册"))
         self.lineEdit_3.setPlaceholderText(_translate("Form", "账号"))
         self.lineEdit_4.setPlaceholderText(_translate("Form", "密码"))
         self.lineEdit_5.setPlaceholderText(_translate("Form", "确认密码"))
         self.pushButton_4.setText(_translate("Form", "登录"))
         self.pushButton_5.setText(_translate("Form", "注册"))
+        self.label_4.setText(_translate("Form", "创建课程"))
+        self.lineEdit_8.setPlaceholderText(_translate("Form", "课程名称"))
+        self.lineEdit_9.setPlaceholderText(_translate("Form", "课程价格"))
+        self.pushButton_8.setText(_translate("Form", "注册"))
+        self.pushButton_9.setText(_translate("Form", "关闭"))

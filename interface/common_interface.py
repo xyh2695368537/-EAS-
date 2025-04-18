@@ -51,3 +51,7 @@ def login_interface(name,pwd,user_type):
     common_logger.info(msg)
     return True,msg
 
+def get_all_school_name():
+    school_path = os.path.join(settings.DB_DIR, 'School')
+
+    return os.listdir(school_path)

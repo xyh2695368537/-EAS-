@@ -30,3 +30,18 @@ def add_school_interface(name,addr,admin_name):
     admin_logger.info(f'管理员{admin_name} 创建学校：{name} 成功')
     return True,f'学校：{name} 创建成功'
 
+def add_course_interface(name,price,school_name,admin_name):
+
+    # 1.判断课程是否存在
+    course_obj = models.Course.select(name)
+    if course_obj:
+        return False,f'课程：{name} 已存在！'
+
+
+    # 2.由管理员创建课程,面向对象开发，理应在管理员类里写课程添加方法
+    admin_obj = models.Admin.select(admin_name)
+
+    # 3.调用课程类,添加课程
+    admin_obj.add_course(name,price,school_name)
+    admin_logger.info(f'管理员{admin_name} 创建课程：{name} 成功')
+    return True,f'课程：{name} 创建成功'
