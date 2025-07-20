@@ -51,7 +51,43 @@ def login_interface(name,pwd,user_type):
     common_logger.info(msg)
     return True,msg
 
-def get_all_school_name():
-    school_path = os.path.join(settings.DB_DIR, 'School')
+# 获取所有对象的名字
+def get_all_obj_name(cls):
+    obj_dir = os.path.join(settings.DB_DIR, cls)
+    if not os.path.isdir(obj_dir):
+        return []
 
-    return os.listdir(school_path)
+
+    return os.listdir(obj_dir)
+
+def get_all_cource(school_name,user_type,login_name):
+    course_dic = {}
+
+    # 获取学校对象
+    school_obj = models.School.select(school_name)
+
+    # 获取学校下面的所有课程名字
+    name_list = school_obj.course_list
+
+    # 拿到所有课程对象
+    for name in name_list:
+        course_obj = models.Course.select(name)
+        # 判断课程对象下面是否有学生对象
+        price = str(course_obj.price)
+        student_num = str(len(course_obj.student_list) + settings.FALSE_STUDENTS_NUM)
+
+        if user_type == 'Student':
+            edit = ('购买','联系老师')
+            if login_name in course_obj.student_list:
+                edit = ('已购买','联系老师')
+        elif user_type == 'Teacher':
+            edit = ('管理',)
+            if login_name != course_obj.teacher_list:
+                return
+        else:
+            edit = ('编辑','删除')
+        course_dic[name] = [name,price,student_num,edit]
+    return course_dic
+
+
+

@@ -92,3 +92,4 @@ CONFIG_PATH = os.path.join(
 config.read(CONFIG_PATH,encoding='utf-8-sig')
 LOGIN_TYPE = config.get('USER','LOGIN_TYPE')
 LOGIN_USER = config.get('USER','LOGIN_USER')
+FALSE_STUDENTS_NUM = config.getint('USER','false_students_num')

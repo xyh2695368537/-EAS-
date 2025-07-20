@@ -1,3 +1,4 @@
-2025-04-18 17:27:14 MainThread:23288 [common] INFO [d:\CodePrograms\python\EAS\interface\common_interface.py:51] 用户: root 登录成功!
-2025-04-18 17:27:23 MainThread:23288 [admin] INFO [d:\CodePrograms\python\EAS\interface\admin_interface.py:46] 管理员root 创建课程：挖掘机 成功
-2025-04-18 17:30:38 MainThread:20188 [common] INFO [d:\CodePrograms\python\EAS\interface\common_interface.py:51] 用户: root 登录成功!
+2025-07-20 00:43:24 MainThread:94108 [common] INFO [d:\CodePrograms\python\EAS\interface\common_interface.py:51] 用户: root 登录成功!
+2025-07-20 00:43:34 MainThread:94108 [admin] INFO [d:\CodePrograms\python\EAS\interface\admin_interface.py:174] 管理员root 修改老师：qwe 成功
+2025-07-20 00:43:40 MainThread:94108 [common] INFO [d:\CodePrograms\python\EAS\interface\common_interface.py:51] 用户: qwe 登录成功!
+2025-07-20 00:43:46 MainThread:94108 [common] INFO [d:\CodePrograms\python\EAS\interface\common_interface.py:51] 用户: root 登录成功!

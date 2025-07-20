@@ -12,7 +12,7 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(805, 664)
+        Form.resize(927, 687)
         Form.setStyleSheet("")
         self.horizontalLayout_10 = QtWidgets.QHBoxLayout(Form)
         self.horizontalLayout_10.setObjectName("horizontalLayout_10")
@@ -489,13 +489,361 @@ class Ui_Form(object):
         self.verticalLayout_9.addItem(spacerItem16)
         self.horizontalLayout_17.addLayout(self.verticalLayout_9)
         self.stackedWidget.addWidget(self.page_4)
+        self.page_5 = QtWidgets.QWidget()
+        self.page_5.setObjectName("page_5")
+        self.horizontalLayout_20 = QtWidgets.QHBoxLayout(self.page_5)
+        self.horizontalLayout_20.setObjectName("horizontalLayout_20")
+        self.verticalLayout_3 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_3.setObjectName("verticalLayout_3")
+        spacerItem17 = QtWidgets.QSpacerItem(630, 13, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
+        self.verticalLayout_3.addItem(spacerItem17)
+        self.horizontalLayout_18 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_18.setObjectName("horizontalLayout_18")
+        spacerItem18 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
+        self.horizontalLayout_18.addItem(spacerItem18)
+        self.verticalLayout_12 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_12.setSpacing(29)
+        self.verticalLayout_12.setObjectName("verticalLayout_12")
+        self.label_5 = QtWidgets.QLabel(parent=self.page_5)
+        font = QtGui.QFont()
+        font.setFamily("微软雅黑")
+        font.setPointSize(90)
+        font.setBold(True)
+        self.label_5.setFont(font)
+        self.label_5.setStyleSheet("color: rgb(85, 170, 127);")
+        self.label_5.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.label_5.setObjectName("label_5")
+        self.verticalLayout_12.addWidget(self.label_5)
+        self.lineEdit_10 = QtWidgets.QLineEdit(parent=self.page_5)
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        self.lineEdit_10.setFont(font)
+        self.lineEdit_10.setStyleSheet("border-radius:15px;\n"
+"padding:5px;\n"
+"background-color: rgb(255, 255, 255);")
+        self.lineEdit_10.setReadOnly(True)
+        self.lineEdit_10.setObjectName("lineEdit_10")
+        self.verticalLayout_12.addWidget(self.lineEdit_10)
+        self.lineEdit_11 = QtWidgets.QLineEdit(parent=self.page_5)
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        self.lineEdit_11.setFont(font)
+        self.lineEdit_11.setStyleSheet("border-radius:15px;\n"
+"padding:5px;\n"
+"background-color: rgb(255, 255, 255);")
+        self.lineEdit_11.setText("")
+        self.lineEdit_11.setEchoMode(QtWidgets.QLineEdit.EchoMode.Normal)
+        self.lineEdit_11.setCursorPosition(0)
+        self.lineEdit_11.setObjectName("lineEdit_11")
+        self.verticalLayout_12.addWidget(self.lineEdit_11)
+        self.comboBox_2 = QtWidgets.QComboBox(parent=self.page_5)
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        self.comboBox_2.setFont(font)
+        self.comboBox_2.setStyleSheet("border-radius:15px;\n"
+"padding:5px;\n"
+"background-color: rgb(255, 255, 255);")
+        self.comboBox_2.setObjectName("comboBox_2")
+        self.verticalLayout_12.addWidget(self.comboBox_2)
+        self.horizontalLayout_19 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_19.setContentsMargins(-1, -1, 0, 5)
+        self.horizontalLayout_19.setSpacing(180)
+        self.horizontalLayout_19.setObjectName("horizontalLayout_19")
+        self.pushButton_10 = QtWidgets.QPushButton(parent=self.page_5)
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.pushButton_10.setFont(font)
+        self.pushButton_10.setStyleSheet("QPushButton{\n"
+"    border-radius:15px;\n"
+"    color: rgb(255, 255, 255);\n"
+"    background-color: rgb(85, 170, 127);\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: rgb(95, 191, 141);\n"
+"}\n"
+"\n"
+"QPushButton:pressed{\n"
+"    background-color: rgb(73, 147, 109);\n"
+"}\n"
+"\n"
+"\n"
+"\n"
+"")
+        self.pushButton_10.setObjectName("pushButton_10")
+        self.horizontalLayout_19.addWidget(self.pushButton_10)
+        self.pushButton_11 = QtWidgets.QPushButton(parent=self.page_5)
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.pushButton_11.setFont(font)
+        self.pushButton_11.setStyleSheet("QPushButton{\n"
+"    border-radius:15px;\n"
+"    color: rgb(255, 255, 255);\n"
+"    background-color: rgb(152, 152, 152);\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: rgb(190, 190, 190);\n"
+"}\n"
+"QPushButton:pressed{\n"
+"    \n"
+"    background-color: rgb(131, 131, 131);\n"
+"}")
+        self.pushButton_11.setObjectName("pushButton_11")
+        self.horizontalLayout_19.addWidget(self.pushButton_11)
+        self.verticalLayout_12.addLayout(self.horizontalLayout_19)
+        self.horizontalLayout_18.addLayout(self.verticalLayout_12)
+        spacerItem19 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
+        self.horizontalLayout_18.addItem(spacerItem19)
+        self.verticalLayout_3.addLayout(self.horizontalLayout_18)
+        spacerItem20 = QtWidgets.QSpacerItem(630, 83, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
+        self.verticalLayout_3.addItem(spacerItem20)
+        self.horizontalLayout_20.addLayout(self.verticalLayout_3)
+        self.stackedWidget.addWidget(self.page_5)
+        self.page_6 = QtWidgets.QWidget()
+        self.page_6.setObjectName("page_6")
+        self.horizontalLayout_23 = QtWidgets.QHBoxLayout(self.page_6)
+        self.horizontalLayout_23.setObjectName("horizontalLayout_23")
+        self.verticalLayout_11 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_11.setObjectName("verticalLayout_11")
+        spacerItem21 = QtWidgets.QSpacerItem(630, 13, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
+        self.verticalLayout_11.addItem(spacerItem21)
+        self.horizontalLayout_21 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_21.setObjectName("horizontalLayout_21")
+        spacerItem22 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
+        self.horizontalLayout_21.addItem(spacerItem22)
+        self.verticalLayout_13 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_13.setSpacing(29)
+        self.verticalLayout_13.setObjectName("verticalLayout_13")
+        self.label_6 = QtWidgets.QLabel(parent=self.page_6)
+        font = QtGui.QFont()
+        font.setFamily("微软雅黑")
+        font.setPointSize(90)
+        font.setBold(True)
+        self.label_6.setFont(font)
+        self.label_6.setStyleSheet("color: rgb(85, 170, 127);")
+        self.label_6.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.label_6.setObjectName("label_6")
+        self.verticalLayout_13.addWidget(self.label_6)
+        self.lineEdit_12 = QtWidgets.QLineEdit(parent=self.page_6)
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        self.lineEdit_12.setFont(font)
+        self.lineEdit_12.setStyleSheet("border-radius:15px;\n"
+"padding:5px;\n"
+"background-color: rgb(255, 255, 255);")
+        self.lineEdit_12.setReadOnly(False)
+        self.lineEdit_12.setObjectName("lineEdit_12")
+        self.verticalLayout_13.addWidget(self.lineEdit_12)
+        self.lineEdit_13 = QtWidgets.QLineEdit(parent=self.page_6)
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        self.lineEdit_13.setFont(font)
+        self.lineEdit_13.setStyleSheet("border-radius:15px;\n"
+"padding:5px;\n"
+"background-color: rgb(255, 255, 255);")
+        self.lineEdit_13.setText("")
+        self.lineEdit_13.setEchoMode(QtWidgets.QLineEdit.EchoMode.Password)
+        self.lineEdit_13.setCursorPosition(0)
+        self.lineEdit_13.setObjectName("lineEdit_13")
+        self.verticalLayout_13.addWidget(self.lineEdit_13)
+        self.lineEdit_14 = QtWidgets.QLineEdit(parent=self.page_6)
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        self.lineEdit_14.setFont(font)
+        self.lineEdit_14.setStyleSheet("border-radius:15px;\n"
+"padding:5px;\n"
+"background-color: rgb(255, 255, 255);")
+        self.lineEdit_14.setText("")
+        self.lineEdit_14.setEchoMode(QtWidgets.QLineEdit.EchoMode.Password)
+        self.lineEdit_14.setCursorPosition(0)
+        self.lineEdit_14.setObjectName("lineEdit_14")
+        self.verticalLayout_13.addWidget(self.lineEdit_14)
+        self.lineEdit_15 = QtWidgets.QLineEdit(parent=self.page_6)
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        self.lineEdit_15.setFont(font)
+        self.lineEdit_15.setStyleSheet("border-radius:15px;\n"
+"padding:5px;\n"
+"background-color: rgb(255, 255, 255);")
+        self.lineEdit_15.setText("")
+        self.lineEdit_15.setEchoMode(QtWidgets.QLineEdit.EchoMode.Normal)
+        self.lineEdit_15.setCursorPosition(0)
+        self.lineEdit_15.setObjectName("lineEdit_15")
+        self.verticalLayout_13.addWidget(self.lineEdit_15)
+        self.horizontalLayout_22 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_22.setContentsMargins(-1, -1, 0, 5)
+        self.horizontalLayout_22.setSpacing(180)
+        self.horizontalLayout_22.setObjectName("horizontalLayout_22")
+        self.pushButton_12 = QtWidgets.QPushButton(parent=self.page_6)
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.pushButton_12.setFont(font)
+        self.pushButton_12.setStyleSheet("QPushButton{\n"
+"    border-radius:15px;\n"
+"    color: rgb(255, 255, 255);\n"
+"    background-color: rgb(85, 170, 127);\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: rgb(95, 191, 141);\n"
+"}\n"
+"\n"
+"QPushButton:pressed{\n"
+"    background-color: rgb(73, 147, 109);\n"
+"}\n"
+"\n"
+"\n"
+"\n"
+"")
+        self.pushButton_12.setObjectName("pushButton_12")
+        self.horizontalLayout_22.addWidget(self.pushButton_12)
+        self.pushButton_13 = QtWidgets.QPushButton(parent=self.page_6)
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.pushButton_13.setFont(font)
+        self.pushButton_13.setStyleSheet("QPushButton{\n"
+"    border-radius:15px;\n"
+"    color: rgb(255, 255, 255);\n"
+"    background-color: rgb(152, 152, 152);\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: rgb(190, 190, 190);\n"
+"}\n"
+"QPushButton:pressed{\n"
+"    \n"
+"    background-color: rgb(131, 131, 131);\n"
+"}")
+        self.pushButton_13.setObjectName("pushButton_13")
+        self.horizontalLayout_22.addWidget(self.pushButton_13)
+        self.verticalLayout_13.addLayout(self.horizontalLayout_22)
+        self.horizontalLayout_21.addLayout(self.verticalLayout_13)
+        spacerItem23 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
+        self.horizontalLayout_21.addItem(spacerItem23)
+        self.verticalLayout_11.addLayout(self.horizontalLayout_21)
+        spacerItem24 = QtWidgets.QSpacerItem(630, 83, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
+        self.verticalLayout_11.addItem(spacerItem24)
+        self.horizontalLayout_23.addLayout(self.verticalLayout_11)
+        self.stackedWidget.addWidget(self.page_6)
+        self.page_7 = QtWidgets.QWidget()
+        self.page_7.setObjectName("page_7")
+        self.horizontalLayout_26 = QtWidgets.QHBoxLayout(self.page_7)
+        self.horizontalLayout_26.setObjectName("horizontalLayout_26")
+        self.verticalLayout_14 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_14.setObjectName("verticalLayout_14")
+        spacerItem25 = QtWidgets.QSpacerItem(630, 13, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
+        self.verticalLayout_14.addItem(spacerItem25)
+        self.horizontalLayout_24 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_24.setObjectName("horizontalLayout_24")
+        spacerItem26 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
+        self.horizontalLayout_24.addItem(spacerItem26)
+        self.verticalLayout_15 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_15.setSpacing(29)
+        self.verticalLayout_15.setObjectName("verticalLayout_15")
+        self.label_7 = QtWidgets.QLabel(parent=self.page_7)
+        font = QtGui.QFont()
+        font.setFamily("微软雅黑")
+        font.setPointSize(90)
+        font.setBold(True)
+        self.label_7.setFont(font)
+        self.label_7.setStyleSheet("color: rgb(85, 170, 127);")
+        self.label_7.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.label_7.setObjectName("label_7")
+        self.verticalLayout_15.addWidget(self.label_7)
+        self.lineEdit_16 = QtWidgets.QLineEdit(parent=self.page_7)
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        self.lineEdit_16.setFont(font)
+        self.lineEdit_16.setStyleSheet("border-radius:15px;\n"
+"padding:5px;\n"
+"background-color: rgb(255, 255, 255);")
+        self.lineEdit_16.setReadOnly(True)
+        self.lineEdit_16.setObjectName("lineEdit_16")
+        self.verticalLayout_15.addWidget(self.lineEdit_16)
+        self.lineEdit_17 = QtWidgets.QLineEdit(parent=self.page_7)
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        self.lineEdit_17.setFont(font)
+        self.lineEdit_17.setStyleSheet("border-radius:15px;\n"
+"padding:5px;\n"
+"background-color: rgb(255, 255, 255);")
+        self.lineEdit_17.setText("")
+        self.lineEdit_17.setEchoMode(QtWidgets.QLineEdit.EchoMode.Normal)
+        self.lineEdit_17.setCursorPosition(0)
+        self.lineEdit_17.setObjectName("lineEdit_17")
+        self.verticalLayout_15.addWidget(self.lineEdit_17)
+        self.comboBox_3 = QtWidgets.QComboBox(parent=self.page_7)
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        self.comboBox_3.setFont(font)
+        self.comboBox_3.setStyleSheet("border-radius:15px;\n"
+"padding:5px;\n"
+"background-color: rgb(255, 255, 255);")
+        self.comboBox_3.setObjectName("comboBox_3")
+        self.verticalLayout_15.addWidget(self.comboBox_3)
+        self.horizontalLayout_25 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_25.setContentsMargins(-1, -1, 0, 5)
+        self.horizontalLayout_25.setSpacing(180)
+        self.horizontalLayout_25.setObjectName("horizontalLayout_25")
+        self.pushButton_14 = QtWidgets.QPushButton(parent=self.page_7)
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.pushButton_14.setFont(font)
+        self.pushButton_14.setStyleSheet("QPushButton{\n"
+"    border-radius:15px;\n"
+"    color: rgb(255, 255, 255);\n"
+"    background-color: rgb(85, 170, 127);\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: rgb(95, 191, 141);\n"
+"}\n"
+"\n"
+"QPushButton:pressed{\n"
+"    background-color: rgb(73, 147, 109);\n"
+"}\n"
+"\n"
+"\n"
+"\n"
+"")
+        self.pushButton_14.setObjectName("pushButton_14")
+        self.horizontalLayout_25.addWidget(self.pushButton_14)
+        self.pushButton_15 = QtWidgets.QPushButton(parent=self.page_7)
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.pushButton_15.setFont(font)
+        self.pushButton_15.setStyleSheet("QPushButton{\n"
+"    border-radius:15px;\n"
+"    color: rgb(255, 255, 255);\n"
+"    background-color: rgb(152, 152, 152);\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: rgb(190, 190, 190);\n"
+"}\n"
+"QPushButton:pressed{\n"
+"    \n"
+"    background-color: rgb(131, 131, 131);\n"
+"}")
+        self.pushButton_15.setObjectName("pushButton_15")
+        self.horizontalLayout_25.addWidget(self.pushButton_15)
+        self.verticalLayout_15.addLayout(self.horizontalLayout_25)
+        self.horizontalLayout_24.addLayout(self.verticalLayout_15)
+        spacerItem27 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
+        self.horizontalLayout_24.addItem(spacerItem27)
+        self.verticalLayout_14.addLayout(self.horizontalLayout_24)
+        spacerItem28 = QtWidgets.QSpacerItem(630, 83, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
+        self.verticalLayout_14.addItem(spacerItem28)
+        self.horizontalLayout_26.addLayout(self.verticalLayout_14)
+        self.stackedWidget.addWidget(self.page_7)
         self.verticalLayout_2.addWidget(self.stackedWidget)
         self.horizontalLayout_8.addLayout(self.verticalLayout_2)
         self.horizontalLayout_7.addWidget(self.widget)
         self.horizontalLayout_10.addWidget(self.widget_2)
 
         self.retranslateUi(Form)
-        self.stackedWidget.setCurrentIndex(3)
+        self.stackedWidget.setCurrentIndex(6)
         self.pushButton.clicked.connect(Form.login) # type: ignore
         self.pushButton_2.clicked.connect(Form.open_register_page) # type: ignore
         self.pushButton_4.clicked.connect(Form.open_login_page) # type: ignore
@@ -509,6 +857,13 @@ class Ui_Form(object):
         self.pushButton_8.clicked.connect(Form.add_course) # type: ignore
         self.pushButton_9.clicked.connect(Form.close) # type: ignore
         self.lineEdit_9.returnPressed.connect(Form.add_course) # type: ignore
+        self.pushButton_10.clicked.connect(Form.save_course) # type: ignore
+        self.pushButton_11.clicked.connect(Form.close) # type: ignore
+        self.pushButton_12.clicked.connect(Form.add_teacher) # type: ignore
+        self.lineEdit_15.returnPressed.connect(Form.add_teacher) # type: ignore
+        self.pushButton_13.clicked.connect(Form.close) # type: ignore
+        self.pushButton_14.clicked.connect(Form.save_teacher) # type: ignore
+        self.pushButton_15.clicked.connect(Form.close) # type: ignore
         QtCore.QMetaObject.connectSlotsByName(Form)
 
     def retranslateUi(self, Form):
@@ -526,7 +881,7 @@ class Ui_Form(object):
         self.label_3.setText(_translate("Form", "创建学校"))
         self.lineEdit_6.setPlaceholderText(_translate("Form", "机构名称"))
         self.lineEdit_7.setPlaceholderText(_translate("Form", "机构地址"))
-        self.pushButton_7.setText(_translate("Form", "注册"))
+        self.pushButton_7.setText(_translate("Form", "创建"))
         self.pushButton_6.setText(_translate("Form", "关闭"))
         self.label_2.setText(_translate("Form", "管理员注册"))
         self.lineEdit_3.setPlaceholderText(_translate("Form", "账号"))
@@ -537,5 +892,22 @@ class Ui_Form(object):
         self.label_4.setText(_translate("Form", "创建课程"))
         self.lineEdit_8.setPlaceholderText(_translate("Form", "课程名称"))
         self.lineEdit_9.setPlaceholderText(_translate("Form", "课程价格"))
-        self.pushButton_8.setText(_translate("Form", "注册"))
+        self.pushButton_8.setText(_translate("Form", "创建"))
         self.pushButton_9.setText(_translate("Form", "关闭"))
+        self.label_5.setText(_translate("Form", "编辑课程"))
+        self.lineEdit_10.setPlaceholderText(_translate("Form", "课程名称"))
+        self.lineEdit_11.setPlaceholderText(_translate("Form", "课程价格"))
+        self.pushButton_10.setText(_translate("Form", "保存"))
+        self.pushButton_11.setText(_translate("Form", "关闭"))
+        self.label_6.setText(_translate("Form", "添加老师"))
+        self.lineEdit_12.setPlaceholderText(_translate("Form", "账号"))
+        self.lineEdit_13.setPlaceholderText(_translate("Form", "密码"))
+        self.lineEdit_14.setPlaceholderText(_translate("Form", "确认密码"))
+        self.lineEdit_15.setPlaceholderText(_translate("Form", "薪资"))
+        self.pushButton_12.setText(_translate("Form", "添加"))
+        self.pushButton_13.setText(_translate("Form", "关闭"))
+        self.label_7.setText(_translate("Form", "编辑老师"))
+        self.lineEdit_16.setPlaceholderText(_translate("Form", "老师名称"))
+        self.lineEdit_17.setPlaceholderText(_translate("Form", "薪资"))
+        self.pushButton_14.setText(_translate("Form", "保存"))
+        self.pushButton_15.setText(_translate("Form", "关闭"))

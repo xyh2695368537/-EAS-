@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>805</width>
-    <height>664</height>
+    <width>927</width>
+    <height>687</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -64,7 +64,7 @@ border-radius:15px</string>
            <item>
             <widget class="QStackedWidget" name="stackedWidget">
              <property name="currentIndex">
-              <number>3</number>
+              <number>6</number>
              </property>
              <widget class="QWidget" name="page">
               <layout class="QHBoxLayout" name="horizontalLayout_5">
@@ -456,7 +456,7 @@ QPushButton:pressed{
 </string>
                          </property>
                          <property name="text">
-                          <string>注册</string>
+                          <string>创建</string>
                          </property>
                         </widget>
                        </item>
@@ -900,7 +900,7 @@ QPushButton:pressed{
 </string>
                          </property>
                          <property name="text">
-                          <string>注册</string>
+                          <string>创建</string>
                          </property>
                         </widget>
                        </item>
@@ -967,6 +967,710 @@ QPushButton:pressed{
                </item>
               </layout>
              </widget>
+             <widget class="QWidget" name="page_5">
+              <layout class="QHBoxLayout" name="horizontalLayout_20">
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_3">
+                 <item>
+                  <spacer name="verticalSpacer_9">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>630</width>
+                     <height>13</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_18">
+                   <item>
+                    <spacer name="horizontalSpacer_10">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>40</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <layout class="QVBoxLayout" name="verticalLayout_12">
+                     <property name="spacing">
+                      <number>29</number>
+                     </property>
+                     <item>
+                      <widget class="QLabel" name="label_5">
+                       <property name="font">
+                        <font>
+                         <family>微软雅黑</family>
+                         <pointsize>90</pointsize>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(85, 170, 127);</string>
+                       </property>
+                       <property name="text">
+                        <string>编辑课程</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="lineEdit_10">
+                       <property name="font">
+                        <font>
+                         <pointsize>16</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">border-radius:15px;
+padding:5px;
+background-color: rgb(255, 255, 255);</string>
+                       </property>
+                       <property name="readOnly">
+                        <bool>true</bool>
+                       </property>
+                       <property name="placeholderText">
+                        <string>课程名称</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="lineEdit_11">
+                       <property name="font">
+                        <font>
+                         <pointsize>16</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">border-radius:15px;
+padding:5px;
+background-color: rgb(255, 255, 255);</string>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                       <property name="echoMode">
+                        <enum>QLineEdit::Normal</enum>
+                       </property>
+                       <property name="cursorPosition">
+                        <number>0</number>
+                       </property>
+                       <property name="placeholderText">
+                        <string>课程价格</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QComboBox" name="comboBox_2">
+                       <property name="font">
+                        <font>
+                         <pointsize>18</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">border-radius:15px;
+padding:5px;
+background-color: rgb(255, 255, 255);</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <layout class="QHBoxLayout" name="horizontalLayout_19">
+                       <property name="spacing">
+                        <number>180</number>
+                       </property>
+                       <property name="rightMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="bottomMargin">
+                        <number>5</number>
+                       </property>
+                       <item>
+                        <widget class="QPushButton" name="pushButton_10">
+                         <property name="font">
+                          <font>
+                           <pointsize>20</pointsize>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QPushButton{
+	border-radius:15px;
+	color: rgb(255, 255, 255);
+	background-color: rgb(85, 170, 127);
+}
+
+QPushButton:hover{
+	background-color: rgb(95, 191, 141);
+}
+
+QPushButton:pressed{
+	background-color: rgb(73, 147, 109);
+}
+
+
+
+</string>
+                         </property>
+                         <property name="text">
+                          <string>保存</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="pushButton_11">
+                         <property name="font">
+                          <font>
+                           <pointsize>20</pointsize>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QPushButton{
+	border-radius:15px;
+	color: rgb(255, 255, 255);
+	background-color: rgb(152, 152, 152);
+}
+
+QPushButton:hover{
+	background-color: rgb(190, 190, 190);
+}
+QPushButton:pressed{
+	
+	background-color: rgb(131, 131, 131);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>关闭</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <spacer name="horizontalSpacer_11">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>40</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <spacer name="verticalSpacer_10">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>630</width>
+                     <height>83</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="page_6">
+              <layout class="QHBoxLayout" name="horizontalLayout_23">
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_11">
+                 <item>
+                  <spacer name="verticalSpacer_11">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>630</width>
+                     <height>13</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_21">
+                   <item>
+                    <spacer name="horizontalSpacer_12">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>40</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <layout class="QVBoxLayout" name="verticalLayout_13">
+                     <property name="spacing">
+                      <number>29</number>
+                     </property>
+                     <item>
+                      <widget class="QLabel" name="label_6">
+                       <property name="font">
+                        <font>
+                         <family>微软雅黑</family>
+                         <pointsize>90</pointsize>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(85, 170, 127);</string>
+                       </property>
+                       <property name="text">
+                        <string>添加老师</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="lineEdit_12">
+                       <property name="font">
+                        <font>
+                         <pointsize>16</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">border-radius:15px;
+padding:5px;
+background-color: rgb(255, 255, 255);</string>
+                       </property>
+                       <property name="readOnly">
+                        <bool>false</bool>
+                       </property>
+                       <property name="placeholderText">
+                        <string>账号</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="lineEdit_13">
+                       <property name="font">
+                        <font>
+                         <pointsize>16</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">border-radius:15px;
+padding:5px;
+background-color: rgb(255, 255, 255);</string>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                       <property name="echoMode">
+                        <enum>QLineEdit::Password</enum>
+                       </property>
+                       <property name="cursorPosition">
+                        <number>0</number>
+                       </property>
+                       <property name="placeholderText">
+                        <string>密码</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="lineEdit_14">
+                       <property name="font">
+                        <font>
+                         <pointsize>16</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">border-radius:15px;
+padding:5px;
+background-color: rgb(255, 255, 255);</string>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                       <property name="echoMode">
+                        <enum>QLineEdit::Password</enum>
+                       </property>
+                       <property name="cursorPosition">
+                        <number>0</number>
+                       </property>
+                       <property name="placeholderText">
+                        <string>确认密码</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="lineEdit_15">
+                       <property name="font">
+                        <font>
+                         <pointsize>16</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">border-radius:15px;
+padding:5px;
+background-color: rgb(255, 255, 255);</string>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                       <property name="echoMode">
+                        <enum>QLineEdit::Normal</enum>
+                       </property>
+                       <property name="cursorPosition">
+                        <number>0</number>
+                       </property>
+                       <property name="placeholderText">
+                        <string>薪资</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <layout class="QHBoxLayout" name="horizontalLayout_22">
+                       <property name="spacing">
+                        <number>180</number>
+                       </property>
+                       <property name="rightMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="bottomMargin">
+                        <number>5</number>
+                       </property>
+                       <item>
+                        <widget class="QPushButton" name="pushButton_12">
+                         <property name="font">
+                          <font>
+                           <pointsize>20</pointsize>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QPushButton{
+	border-radius:15px;
+	color: rgb(255, 255, 255);
+	background-color: rgb(85, 170, 127);
+}
+
+QPushButton:hover{
+	background-color: rgb(95, 191, 141);
+}
+
+QPushButton:pressed{
+	background-color: rgb(73, 147, 109);
+}
+
+
+
+</string>
+                         </property>
+                         <property name="text">
+                          <string>添加</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="pushButton_13">
+                         <property name="font">
+                          <font>
+                           <pointsize>20</pointsize>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QPushButton{
+	border-radius:15px;
+	color: rgb(255, 255, 255);
+	background-color: rgb(152, 152, 152);
+}
+
+QPushButton:hover{
+	background-color: rgb(190, 190, 190);
+}
+QPushButton:pressed{
+	
+	background-color: rgb(131, 131, 131);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>关闭</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <spacer name="horizontalSpacer_13">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>40</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <spacer name="verticalSpacer_12">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>630</width>
+                     <height>83</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="page_7">
+              <layout class="QHBoxLayout" name="horizontalLayout_26">
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_14">
+                 <item>
+                  <spacer name="verticalSpacer_13">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>630</width>
+                     <height>13</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_24">
+                   <item>
+                    <spacer name="horizontalSpacer_14">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>40</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <layout class="QVBoxLayout" name="verticalLayout_15">
+                     <property name="spacing">
+                      <number>29</number>
+                     </property>
+                     <item>
+                      <widget class="QLabel" name="label_7">
+                       <property name="font">
+                        <font>
+                         <family>微软雅黑</family>
+                         <pointsize>90</pointsize>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(85, 170, 127);</string>
+                       </property>
+                       <property name="text">
+                        <string>编辑老师</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="lineEdit_16">
+                       <property name="font">
+                        <font>
+                         <pointsize>16</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">border-radius:15px;
+padding:5px;
+background-color: rgb(255, 255, 255);</string>
+                       </property>
+                       <property name="readOnly">
+                        <bool>true</bool>
+                       </property>
+                       <property name="placeholderText">
+                        <string>老师名称</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="lineEdit_17">
+                       <property name="font">
+                        <font>
+                         <pointsize>16</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">border-radius:15px;
+padding:5px;
+background-color: rgb(255, 255, 255);</string>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                       <property name="echoMode">
+                        <enum>QLineEdit::Normal</enum>
+                       </property>
+                       <property name="cursorPosition">
+                        <number>0</number>
+                       </property>
+                       <property name="placeholderText">
+                        <string>薪资</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QComboBox" name="comboBox_3">
+                       <property name="font">
+                        <font>
+                         <pointsize>18</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">border-radius:15px;
+padding:5px;
+background-color: rgb(255, 255, 255);</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <layout class="QHBoxLayout" name="horizontalLayout_25">
+                       <property name="spacing">
+                        <number>180</number>
+                       </property>
+                       <property name="rightMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="bottomMargin">
+                        <number>5</number>
+                       </property>
+                       <item>
+                        <widget class="QPushButton" name="pushButton_14">
+                         <property name="font">
+                          <font>
+                           <pointsize>20</pointsize>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QPushButton{
+	border-radius:15px;
+	color: rgb(255, 255, 255);
+	background-color: rgb(85, 170, 127);
+}
+
+QPushButton:hover{
+	background-color: rgb(95, 191, 141);
+}
+
+QPushButton:pressed{
+	background-color: rgb(73, 147, 109);
+}
+
+
+
+</string>
+                         </property>
+                         <property name="text">
+                          <string>保存</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="pushButton_15">
+                         <property name="font">
+                          <font>
+                           <pointsize>20</pointsize>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QPushButton{
+	border-radius:15px;
+	color: rgb(255, 255, 255);
+	background-color: rgb(152, 152, 152);
+}
+
+QPushButton:hover{
+	background-color: rgb(190, 190, 190);
+}
+QPushButton:pressed{
+	
+	background-color: rgb(131, 131, 131);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>关闭</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <spacer name="horizontalSpacer_15">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>40</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <spacer name="verticalSpacer_14">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>630</width>
+                     <height>83</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
             </widget>
            </item>
           </layout>
@@ -988,12 +1692,12 @@ QPushButton:pressed{
    <slot>login()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>302</x>
-     <y>521</y>
+     <x>228</x>
+     <y>494</y>
     </hint>
     <hint type="destinationlabel">
      <x>161</x>
-     <y>574</y>
+     <y>562</y>
     </hint>
    </hints>
   </connection>
@@ -1004,12 +1708,12 @@ QPushButton:pressed{
    <slot>open_register_page()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>641</x>
-     <y>521</y>
+     <x>567</x>
+     <y>494</y>
     </hint>
     <hint type="destinationlabel">
      <x>484</x>
-     <y>585</y>
+     <y>562</y>
     </hint>
    </hints>
   </connection>
@@ -1020,12 +1724,12 @@ QPushButton:pressed{
    <slot>open_login_page()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>302</x>
-     <y>521</y>
+     <x>268</x>
+     <y>498</y>
     </hint>
     <hint type="destinationlabel">
      <x>190</x>
-     <y>569</y>
+     <y>562</y>
     </hint>
    </hints>
   </connection>
@@ -1036,8 +1740,8 @@ QPushButton:pressed{
    <slot>register()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>601</x>
-     <y>521</y>
+     <x>567</x>
+     <y>498</y>
     </hint>
     <hint type="destinationlabel">
      <x>539</x>
@@ -1052,11 +1756,11 @@ QPushButton:pressed{
    <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>622</x>
+     <x>903</x>
      <y>50</y>
     </hint>
     <hint type="destinationlabel">
-     <x>792</x>
+     <x>790</x>
      <y>32</y>
     </hint>
    </hints>
@@ -1068,12 +1772,12 @@ QPushButton:pressed{
    <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>641</x>
-     <y>517</y>
+     <x>557</x>
+     <y>494</y>
     </hint>
     <hint type="destinationlabel">
      <x>494</x>
-     <y>572</y>
+     <y>562</y>
     </hint>
    </hints>
   </connection>
@@ -1084,8 +1788,8 @@ QPushButton:pressed{
    <slot>add_school()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>443</x>
-     <y>452</y>
+     <x>290</x>
+     <y>426</y>
     </hint>
     <hint type="destinationlabel">
      <x>423</x>
@@ -1100,12 +1804,12 @@ QPushButton:pressed{
    <slot>register()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>562</x>
-     <y>456</y>
+     <x>330</x>
+     <y>430</y>
     </hint>
     <hint type="destinationlabel">
      <x>370</x>
-     <y>568</y>
+     <y>562</y>
     </hint>
    </hints>
   </connection>
@@ -1116,12 +1820,12 @@ QPushButton:pressed{
    <slot>login()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>485</x>
-     <y>408</y>
+     <x>290</x>
+     <y>378</y>
     </hint>
     <hint type="destinationlabel">
      <x>263</x>
-     <y>571</y>
+     <y>562</y>
     </hint>
    </hints>
   </connection>
@@ -1132,12 +1836,12 @@ QPushButton:pressed{
    <slot>add_school()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>312</x>
-     <y>517</y>
+     <x>228</x>
+     <y>494</y>
     </hint>
     <hint type="destinationlabel">
      <x>1</x>
-     <y>731</y>
+     <y>562</y>
     </hint>
    </hints>
   </connection>
@@ -1148,12 +1852,12 @@ QPushButton:pressed{
    <slot>add_course()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>167</x>
-     <y>478</y>
+     <x>264</x>
+     <y>513</y>
     </hint>
     <hint type="destinationlabel">
      <x>785</x>
-     <y>583</y>
+     <y>562</y>
     </hint>
    </hints>
   </connection>
@@ -1164,8 +1868,8 @@ QPushButton:pressed{
    <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>525</x>
-     <y>489</y>
+     <x>705</x>
+     <y>528</y>
     </hint>
     <hint type="destinationlabel">
      <x>783</x>
@@ -1180,12 +1884,124 @@ QPushButton:pressed{
    <slot>add_course()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>306</x>
-     <y>419</y>
+     <x>485</x>
+     <y>463</y>
     </hint>
     <hint type="destinationlabel">
      <x>772</x>
-     <y>622</y>
+     <y>562</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_10</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>save_course()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>376</x>
+     <y>540</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>547</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>705</x>
+     <y>540</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>651</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_12</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>add_teacher()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>318</x>
+     <y>547</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>766</x>
+     <y>628</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_15</sender>
+   <signal>returnPressed()</signal>
+   <receiver>Form</receiver>
+   <slot>add_teacher()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>257</x>
+     <y>475</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>136</x>
+     <y>638</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_13</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>651</x>
+     <y>556</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>506</x>
+     <y>644</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_14</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>save_teacher()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>300</x>
+     <y>522</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>164</x>
+     <y>765</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_15</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>629</x>
+     <y>525</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>575</x>
+     <y>743</y>
     </hint>
    </hints>
   </connection>
@@ -1197,5 +2013,8 @@ QPushButton:pressed{
   <slot>register()</slot>
   <slot>add_school()</slot>
   <slot>add_course()</slot>
+  <slot>save_course()</slot>
+  <slot>add_teacher()</slot>
+  <slot>save_teacher()</slot>
  </slots>
 </ui>

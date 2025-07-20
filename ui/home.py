@@ -12,7 +12,9 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(1170, 732)
+        Form.resize(1026, 613)
+        Form.setMinimumSize(QtCore.QSize(0, 22))
+        Form.setMaximumSize(QtCore.QSize(16777205, 16777215))
         self.horizontalLayout = QtWidgets.QHBoxLayout(Form)
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.widget = QtWidgets.QWidget(parent=Form)
@@ -201,8 +203,8 @@ class Ui_Form(object):
         self.horizontalLayout.addWidget(self.widget)
         self.widget_2 = QtWidgets.QWidget(parent=Form)
         self.widget_2.setObjectName("widget_2")
-        self.horizontalLayout_5 = QtWidgets.QHBoxLayout(self.widget_2)
-        self.horizontalLayout_5.setObjectName("horizontalLayout_5")
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.widget_2)
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
         self.stackedWidget = QtWidgets.QStackedWidget(parent=self.widget_2)
         self.stackedWidget.setObjectName("stackedWidget")
         self.page = QtWidgets.QWidget()
@@ -870,7 +872,8 @@ class Ui_Form(object):
         self.lineEdit.setObjectName("lineEdit")
         self.horizontalLayout_36.addWidget(self.lineEdit)
         self.pushButton_12 = QtWidgets.QPushButton(parent=self.page_2)
-        self.pushButton_12.setMinimumSize(QtCore.QSize(80, 0))
+        self.pushButton_12.setMinimumSize(QtCore.QSize(80, 22))
+        self.pushButton_12.setMaximumSize(QtCore.QSize(16777205, 16777215))
         self.pushButton_12.setStyleSheet("QPushButton{\n"
 "    color:rgb(255,255,255);\n"
 "    border-radius:10px;\n"
@@ -885,7 +888,7 @@ class Ui_Form(object):
         self.pushButton_12.setObjectName("pushButton_12")
         self.horizontalLayout_36.addWidget(self.pushButton_12)
         self.pushButton_13 = QtWidgets.QPushButton(parent=self.page_2)
-        self.pushButton_13.setMinimumSize(QtCore.QSize(80, 0))
+        self.pushButton_13.setMinimumSize(QtCore.QSize(80, 20))
         self.pushButton_13.setMaximumSize(QtCore.QSize(50, 16777215))
         font = QtGui.QFont()
         font.setPointSize(12)
@@ -1015,6 +1018,7 @@ class Ui_Form(object):
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget_2.setHorizontalHeaderItem(3, item)
         item = QtWidgets.QTableWidgetItem()
+        item.setTextAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.tableWidget_2.setItem(0, 0, item)
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget_2.setItem(0, 1, item)
@@ -1396,11 +1400,11 @@ class Ui_Form(object):
         self.stackedWidget_3.addWidget(self.page_10)
         self.horizontalLayout_45.addWidget(self.stackedWidget_3)
         self.stackedWidget.addWidget(self.page_8)
-        self.horizontalLayout_5.addWidget(self.stackedWidget)
+        self.horizontalLayout_2.addWidget(self.stackedWidget)
         self.horizontalLayout.addWidget(self.widget_2)
 
         self.retranslateUi(Form)
-        self.stackedWidget.setCurrentIndex(2)
+        self.stackedWidget.setCurrentIndex(3)
         self.stackedWidget_2.setCurrentIndex(0)
         self.tabWidget.setCurrentIndex(1)
         self.pushButton.clicked.connect(Form.open_home_page) # type: ignore
@@ -1412,6 +1416,13 @@ class Ui_Form(object):
         self.pushButton_7.clicked.connect(Form.login_out) # type: ignore
         self.comboBox.currentTextChanged['QString'].connect(Form.change_school) # type: ignore
         self.pushButton_18.clicked.connect(Form.open_add_course_page) # type: ignore
+        self.pushButton_9.pressed.connect(Form.filter_all_student) # type: ignore
+        self.pushButton_10.pressed.connect(Form.filter_buy_student) # type: ignore
+        self.pushButton_11.pressed.connect(Form.filter_free_student) # type: ignore
+        self.pushButton_12.clicked.connect(Form.search_student) # type: ignore
+        self.lineEdit.returnPressed.connect(Form.search_student) # type: ignore
+        self.pushButton_13.clicked.connect(Form.refresh_all_student) # type: ignore
+        self.pushButton_19.clicked.connect(Form.open_add_teacher_page) # type: ignore
         QtCore.QMetaObject.connectSlotsByName(Form)
 
     def retranslateUi(self, Form):
@@ -1486,7 +1497,7 @@ class Ui_Form(object):
         item = self.tableWidget.horizontalHeaderItem(2)
         item.setText(_translate("Form", "购课时间"))
         item = self.tableWidget.horizontalHeaderItem(3)
-        item.setText(_translate("Form", "注册时间"))
+        item.setText(_translate("Form", "编辑"))
         __sortingEnabled = self.tableWidget.isSortingEnabled()
         self.tableWidget.setSortingEnabled(False)
         item = self.tableWidget.item(0, 0)
@@ -1495,15 +1506,11 @@ class Ui_Form(object):
         item.setText(_translate("Form", "2"))
         item = self.tableWidget.item(0, 2)
         item.setText(_translate("Form", "今天"))
-        item = self.tableWidget.item(0, 3)
-        item.setText(_translate("Form", "今天"))
         item = self.tableWidget.item(1, 0)
         item.setText(_translate("Form", "li"))
         item = self.tableWidget.item(1, 1)
         item.setText(_translate("Form", "2"))
         item = self.tableWidget.item(1, 2)
-        item.setText(_translate("Form", "明天"))
-        item = self.tableWidget.item(1, 3)
         item.setText(_translate("Form", "明天"))
         self.tableWidget.setSortingEnabled(__sortingEnabled)
         self.label_43.setText(_translate("Form", "课程列表"))
@@ -1561,15 +1568,11 @@ class Ui_Form(object):
         item.setText(_translate("Form", "2"))
         item = self.tableWidget_3.item(0, 2)
         item.setText(_translate("Form", "今天"))
-        item = self.tableWidget_3.item(0, 3)
-        item.setText(_translate("Form", "今天"))
         item = self.tableWidget_3.item(1, 0)
         item.setText(_translate("Form", "li"))
         item = self.tableWidget_3.item(1, 1)
         item.setText(_translate("Form", "2"))
         item = self.tableWidget_3.item(1, 2)
-        item.setText(_translate("Form", "明天"))
-        item = self.tableWidget_3.item(1, 3)
         item.setText(_translate("Form", "明天"))
         self.tableWidget_3.setSortingEnabled(__sortingEnabled)
         item = self.tableWidget_4.verticalHeaderItem(0)
