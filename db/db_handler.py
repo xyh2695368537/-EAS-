@@ -20,9 +20,7 @@ def save_data(obj):
         os.mkdir(obj_dir)
 
     # 拼接文件名
-    obj_path = os.path.join(
-        obj_dir, obj.name
-    )
+    obj_path = os.path.join(obj_dir, obj.name)
     # 3.保存文件
     with open(obj_path, 'wb') as f:
         pickle.dump(obj, f)

@@ -1,4 +1,86 @@
-2025-07-20 00:43:24 MainThread:94108 [common] INFO [d:\CodePrograms\python\EAS\interface\common_interface.py:51] 用户: root 登录成功!
-2025-07-20 00:43:34 MainThread:94108 [admin] INFO [d:\CodePrograms\python\EAS\interface\admin_interface.py:174] 管理员root 修改老师：qwe 成功
-2025-07-20 00:43:40 MainThread:94108 [common] INFO [d:\CodePrograms\python\EAS\interface\common_interface.py:51] 用户: qwe 登录成功!
-2025-07-20 00:43:46 MainThread:94108 [common] INFO [d:\CodePrograms\python\EAS\interface\common_interface.py:51] 用户: root 登录成功!
+2025-07-20 14:15:35 MainThread:22052 [admin] INFO [D:\CodePrograms\python\EAS\interface\admin_interface.py:174] 管理员root 修改老师：qwe 成功
+2025-07-20 23:57:16 MainThread:3328 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:51] 用户: root 登录成功!
+2025-07-20 23:58:45 MainThread:18216 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:51] 用户: root 登录成功!
+2025-07-21 00:01:14 MainThread:23816 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:51] 用户: root 登录成功!
+2025-07-21 00:01:46 MainThread:26960 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:51] 用户: root 登录成功!
+2025-07-21 00:42:32 MainThread:9564 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:51] 用户: qwe 登录成功!
+2025-07-21 00:42:38 MainThread:9564 [admin] INFO [D:\CodePrograms\python\EAS\interface\admin_interface.py:188] 管理员 qwe 给：qwe 发工资成功！
+2025-07-27 17:04:57 MainThread:40704 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:51] 用户: qwe 登录成功!
+2025-07-27 17:05:15 MainThread:15544 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:51] 用户: qwe 登录成功!
+2025-07-27 17:06:15 MainThread:17932 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:51] 用户: qwe 登录成功!
+2025-07-27 17:37:27 MainThread:2264 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:51] 用户: qwe 登录成功!
+2025-07-27 17:38:41 MainThread:30452 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-07-27 17:38:52 MainThread:30452 [student] INFO [D:\CodePrograms\python\EAS\interface\student_interface.py:28] qwe 购买了 挖掘机 课程
+2025-07-27 17:47:23 MainThread:30688 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-07-27 17:49:16 MainThread:36008 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-07-27 17:51:03 MainThread:39416 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-07-27 17:52:47 MainThread:33524 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-07-27 20:05:29 MainThread:32680 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-07-27 20:05:47 MainThread:32680 [admin] INFO [D:\CodePrograms\python\EAS\interface\admin_interface.py:58] 管理员qwe 创建课程：炒菜 成功
+2025-07-27 20:05:52 MainThread:32680 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-07-27 20:05:58 MainThread:32680 [student] INFO [D:\CodePrograms\python\EAS\interface\student_interface.py:28] qwe 购买了 炒菜 课程
+2025-07-27 20:25:03 MainThread:37304 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-07-27 20:25:15 MainThread:37304 [admin] INFO [D:\CodePrograms\python\EAS\interface\admin_interface.py:143] 管理员 qwe 创建老师：asd 成功
+2025-07-27 20:25:24 MainThread:37304 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-07-27 20:25:34 MainThread:37304 [admin] INFO [D:\CodePrograms\python\EAS\interface\admin_interface.py:68] 管理员qwe 修改课程：炒菜 成功
+2025-07-27 20:25:41 MainThread:37304 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-07-27 20:27:51 MainThread:18788 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-07-27 20:36:53 MainThread:37272 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: asd 登录成功!
+2025-07-27 20:37:48 MainThread:37272 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-07-28 23:42:14 MainThread:35592 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: asd 登录成功!
+2025-07-28 23:43:20 MainThread:35592 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-07-28 23:43:42 MainThread:35592 [admin] INFO [D:\CodePrograms\python\EAS\interface\admin_interface.py:58] 管理员qwe 创建课程：挖掘机 成功
+2025-07-28 23:44:00 MainThread:35592 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: asd 登录成功!
+2025-07-28 23:45:14 MainThread:38036 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-07-28 23:45:24 MainThread:38036 [admin] INFO [D:\CodePrograms\python\EAS\interface\admin_interface.py:58] 管理员qwe 创建课程：挖掘机 成功
+2025-07-28 23:45:27 MainThread:38036 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-07-28 23:46:16 MainThread:25752 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-07-28 23:47:38 MainThread:10680 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-07-28 23:48:06 MainThread:10680 [admin] INFO [D:\CodePrograms\python\EAS\interface\admin_interface.py:58] 管理员qwe 创建课程：挖掘机 成功
+2025-07-28 23:48:09 MainThread:10680 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-07-28 23:49:27 MainThread:25532 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-07-28 23:50:47 MainThread:25832 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-07-28 23:50:59 MainThread:25832 [admin] INFO [D:\CodePrograms\python\EAS\interface\admin_interface.py:42] 管理员qwe 创建学校：蓝翔 成功
+2025-07-28 23:51:18 MainThread:25832 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-07-28 23:52:14 MainThread:28840 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-07-28 23:52:33 MainThread:28840 [admin] INFO [D:\CodePrograms\python\EAS\interface\admin_interface.py:58] 管理员qwe 创建课程：炒菜 成功
+2025-07-28 23:52:53 MainThread:28840 [admin] INFO [D:\CodePrograms\python\EAS\interface\admin_interface.py:143] 管理员 qwe 创建老师：qwe 成功
+2025-07-28 23:53:02 MainThread:28840 [student] INFO [D:\CodePrograms\python\EAS\interface\student_interface.py:20] 用户名：qwe 注册成功！
+2025-07-28 23:53:05 MainThread:28840 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-07-28 23:53:09 MainThread:28840 [student] INFO [D:\CodePrograms\python\EAS\interface\student_interface.py:28] qwe 购买了 炒菜 课程
+2025-07-28 23:53:12 MainThread:28840 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-07-28 23:54:18 MainThread:28840 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-07-28 23:54:25 MainThread:28840 [admin] INFO [D:\CodePrograms\python\EAS\interface\admin_interface.py:68] 管理员qwe 修改课程：炒菜 成功
+2025-07-28 23:54:30 MainThread:28840 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-07-28 23:56:45 MainThread:4784 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-07-29 00:10:45 MainThread:4784 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-07-29 00:13:23 MainThread:18612 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-07-29 00:14:28 MainThread:18612 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-07-29 00:16:04 MainThread:33492 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-07-29 00:18:11 MainThread:6596 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-07-31 00:30:31 MainThread:32020 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-07-31 00:31:02 MainThread:32020 [admin] INFO [D:\CodePrograms\python\EAS\interface\admin_interface.py:59] 管理员qwe 创建课程：厨师 成功
+2025-07-31 00:31:09 MainThread:32020 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-07-31 00:31:14 MainThread:32020 [student] INFO [D:\CodePrograms\python\EAS\interface\student_interface.py:28] qwe 购买了 厨师 课程
+2025-07-31 00:31:18 MainThread:32020 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-08-01 23:59:41 MainThread:16212 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-08-02 00:00:45 MainThread:26796 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-08-02 00:02:51 MainThread:45472 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-08-03 00:13:02 MainThread:42376 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-08-03 00:13:55 MainThread:22212 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-08-03 00:14:31 MainThread:27824 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-08-03 00:15:27 MainThread:32228 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-08-03 00:16:34 MainThread:32220 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-08-03 00:18:52 MainThread:39788 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-08-03 00:27:11 MainThread:37224 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-08-03 00:27:19 MainThread:37224 [admin] INFO [D:\CodePrograms\python\EAS\interface\admin_interface.py:119] 管理员 qwe 冻结学生：qwe 成功
+2025-08-03 00:27:24 MainThread:37224 [admin] INFO [D:\CodePrograms\python\EAS\interface\admin_interface.py:119] 管理员 qwe 冻结学生：qwe 成功
+2025-08-03 00:27:30 MainThread:37224 [admin] INFO [D:\CodePrograms\python\EAS\interface\admin_interface.py:119] 管理员 qwe 冻结学生：qwe 成功
+2025-08-03 00:27:37 MainThread:37224 [admin] INFO [D:\CodePrograms\python\EAS\interface\admin_interface.py:119] 管理员 qwe 冻结学生：qwe 成功
+2025-08-03 00:27:43 MainThread:37224 [admin] INFO [D:\CodePrograms\python\EAS\interface\admin_interface.py:119] 管理员 qwe 冻结学生：qwe 成功
+2025-08-03 00:27:48 MainThread:37224 [admin] INFO [D:\CodePrograms\python\EAS\interface\admin_interface.py:129] 管理员 qwe 解冻学生：qwe 成功
+2025-08-03 17:12:03 MainThread:19776 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-08-03 17:22:00 MainThread:46168 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-08-03 17:34:21 MainThread:42492 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-08-03 17:38:40 MainThread:25256 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!
+2025-08-03 17:38:56 MainThread:36504 [common] INFO [D:\CodePrograms\python\EAS\interface\common_interface.py:53] 用户: qwe 登录成功!

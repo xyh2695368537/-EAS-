@@ -6,7 +6,6 @@ import os.path
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 DB_DIR = os.path.join(BASE_DIR, 'db')
 
-
 LOGGING_DIC = {
     'version': 1.0,
     'disable_existing_loggers': False,
@@ -39,7 +38,7 @@ LOGGING_DIC = {
             'level': 'INFO',
             'class': 'logging.handlers.RotatingFileHandler',  # 保存到文件,日志轮转
             'filename': os.path.join(BASE_DIR, 'log', 'user.log'),  # 日志存放的路径
-            'maxBytes': 800,  # 日志大小 10M
+            'maxBytes': 10 *1024*1024,  # 日志大小 10M
             'backupCount': 3,  # 日志文件保存数量限制
             'encoding': 'utf-8',
             'formatter': 'standard',
@@ -62,7 +61,7 @@ LOGGING_DIC = {
     # 日志记录器
     'loggers': {
         '': {
-            'handlers': ['console_debug_handler','file_info_handler'],
+            'handlers': ['console_debug_handler', 'file_info_handler'],
             'level': 'DEBUG',
             'propagate': False,
 
@@ -70,8 +69,8 @@ LOGGING_DIC = {
     }
 }
 
-
 import logging.config
+
 logging.config.dictConfig(LOGGING_DIC)
 
 # # 配置文件相关
@@ -85,11 +84,13 @@ logging.config.dictConfig(LOGGING_DIC)
 
 # 读取配置文件
 import configparser
+
 config = configparser.ConfigParser()
 CONFIG_PATH = os.path.join(
-    BASE_DIR,'settings.ini'
+    BASE_DIR, 'settings.ini'
 )
-config.read(CONFIG_PATH,encoding='utf-8-sig')
-LOGIN_TYPE = config.get('USER','LOGIN_TYPE')
-LOGIN_USER = config.get('USER','LOGIN_USER')
-FALSE_STUDENTS_NUM = config.getint('USER','false_students_num')
+config.read(CONFIG_PATH, encoding='utf-8-sig')
+LOGIN_TYPE = config.get('USER', 'LOGIN_TYPE')
+LOGIN_USER = config.get('USER', 'LOGIN_USER')
+FALSE_STUDENTS_NUM = config.getint('USER', 'false_students_num')
+WELCOME_MSG = config.get('USER', 'WELCOME_MSG')

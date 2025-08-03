@@ -1,4 +1,3 @@
-
 # 管理类方法
 
 import datetime
@@ -100,6 +99,28 @@ class Admin(Base):
         # school_obj.course_list.append(name)
         # school_obj.save()
 
+    def payoff(self, name, salary):
+        flow_data = [str(datetime.datetime.now()), name, f'-{salary}', '支出', tuple()]
+        self.flow.append(flow_data)
+        self.save()
+        return flow_data
+
+    def save_flow(self,course_obj):
+        buy_time = datetime.datetime.now()
+        self.flow.append([str(buy_time), course_obj.name, str(course_obj.price), '收入',tuple()])
+
+        self.all_income += course_obj.price
+        self.pay_num += 1
+
+        now_date = buy_time.date()
+
+        if not self.today_income.get(now_date):
+            self.today_income[now_date] = 0
+        self.today_income[now_date] += course_obj.price
+        self.save()
+
+
+
 
 class Student(Base):
     def __init__(self, name, pwd):
@@ -115,6 +136,28 @@ class Student(Base):
 
         super(Student, self).__init__(name)
 
+    def buy_course(self, name, price):
+        # 1.学生对象绑定课程
+        self.course_list.append(name)
+        self.save()
+
+        # 2.课程绑定学生
+        course_obj = Course.select(name)
+        course_obj:Course
+        course_obj.student_list.append(self.name)
+        course_obj.save()
+
+        # 3.管理员记录流水
+        admin_path = os.path.join(settings.DB_DIR, 'Admin')
+        admin_obj = Admin.select(os.listdir(admin_path)[0])
+        admin_obj: Admin
+        admin_obj.save_flow(course_obj)
+
+
+
+
+
+
 
 class Teacher(Base):
     def __init__(self, name, pwd, salary):
@@ -122,6 +165,8 @@ class Teacher(Base):
         self.salary = salary
         # 冻结
         self.locked = False
+
+        self.wechat = None
 
         # 课程列表
         self.course_list = []

@@ -12,10 +12,11 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(1026, 613)
+        Form.resize(973, 631)
         Form.setMinimumSize(QtCore.QSize(0, 22))
         Form.setMaximumSize(QtCore.QSize(16777205, 16777215))
         self.horizontalLayout = QtWidgets.QHBoxLayout(Form)
+        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.widget = QtWidgets.QWidget(parent=Form)
         self.widget.setStyleSheet("background-color: rgb(27, 35, 56);")
@@ -1404,9 +1405,10 @@ class Ui_Form(object):
         self.horizontalLayout.addWidget(self.widget_2)
 
         self.retranslateUi(Form)
-        self.stackedWidget.setCurrentIndex(3)
+        self.stackedWidget.setCurrentIndex(0)
         self.stackedWidget_2.setCurrentIndex(0)
-        self.tabWidget.setCurrentIndex(1)
+        self.tabWidget.setCurrentIndex(0)
+        self.stackedWidget_3.setCurrentIndex(1)
         self.pushButton.clicked.connect(Form.open_home_page) # type: ignore
         self.pushButton_2.clicked.connect(Form.open_stu_list_page) # type: ignore
         self.pushButton_3.clicked.connect(Form.open_course_list_page) # type: ignore
@@ -1423,6 +1425,10 @@ class Ui_Form(object):
         self.lineEdit.returnPressed.connect(Form.search_student) # type: ignore
         self.pushButton_13.clicked.connect(Form.refresh_all_student) # type: ignore
         self.pushButton_19.clicked.connect(Form.open_add_teacher_page) # type: ignore
+        self.pushButton_14.clicked.connect(Form.save_welcome_msg) # type: ignore
+        self.pushButton_15.clicked.connect(Form.save_false_students_num) # type: ignore
+        self.pushButton_16.clicked.connect(Form.save_wechat) # type: ignore
+        self.pushButton_8.clicked.connect(Form.reload_admin_data) # type: ignore
         QtCore.QMetaObject.connectSlotsByName(Form)
 
     def retranslateUi(self, Form):
@@ -1595,15 +1601,11 @@ class Ui_Form(object):
         item.setText(_translate("Form", "2"))
         item = self.tableWidget_4.item(0, 2)
         item.setText(_translate("Form", "今天"))
-        item = self.tableWidget_4.item(0, 3)
-        item.setText(_translate("Form", "今天"))
         item = self.tableWidget_4.item(1, 0)
         item.setText(_translate("Form", "li"))
         item = self.tableWidget_4.item(1, 1)
         item.setText(_translate("Form", "2"))
         item = self.tableWidget_4.item(1, 2)
-        item.setText(_translate("Form", "明天"))
-        item = self.tableWidget_4.item(1, 3)
         item.setText(_translate("Form", "明天"))
         self.tableWidget_4.setSortingEnabled(__sortingEnabled)
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.widget1), _translate("Form", "查流水"))
@@ -1627,16 +1629,12 @@ class Ui_Form(object):
         item.setText(_translate("Form", "2"))
         item = self.tableWidget_5.item(0, 2)
         item.setText(_translate("Form", "今天"))
-        item = self.tableWidget_5.item(0, 3)
-        item.setText(_translate("Form", "发工资"))
         item = self.tableWidget_5.item(1, 0)
         item.setText(_translate("Form", "li"))
         item = self.tableWidget_5.item(1, 1)
         item.setText(_translate("Form", "2"))
         item = self.tableWidget_5.item(1, 2)
         item.setText(_translate("Form", "明天"))
-        item = self.tableWidget_5.item(1, 3)
-        item.setText(_translate("Form", "发工资"))
         self.tableWidget_5.setSortingEnabled(__sortingEnabled)
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("Form", "发工资"))
         self.label_45.setText(_translate("Form", "欢迎语："))

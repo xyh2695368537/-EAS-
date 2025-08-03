@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1026</width>
-    <height>613</height>
+    <width>973</width>
+    <height>631</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -26,6 +26,18 @@
    <string>Form</string>
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
    <item>
     <widget class="QWidget" name="widget" native="true">
      <property name="styleSheet">
@@ -365,7 +377,7 @@ QPushButton:checked{
       <item>
        <widget class="QStackedWidget" name="stackedWidget">
         <property name="currentIndex">
-         <number>3</number>
+         <number>0</number>
         </property>
         <widget class="QWidget" name="page">
          <layout class="QHBoxLayout" name="horizontalLayout_6">
@@ -412,7 +424,7 @@ background-color: rgb(255, 255, 255);</string>
                  <item>
                   <widget class="QStackedWidget" name="stackedWidget_2">
                    <property name="currentIndex">
-                    <number>0</number>
+                    <number>1</number>
                    </property>
                    <widget class="QWidget" name="page_6">
                     <layout class="QHBoxLayout" name="horizontalLayout_21">
@@ -2484,7 +2496,7 @@ QPushButton:checked{
              <enum>QTabWidget::North</enum>
             </property>
             <property name="currentIndex">
-             <number>1</number>
+             <number>0</number>
             </property>
             <widget class="QWidget" name="widget">
              <attribute name="title">
@@ -2572,7 +2584,7 @@ QPushButton:checked{
                 </item>
                 <item row="0" column="3">
                  <property name="text">
-                  <string>今天</string>
+                  <string/>
                  </property>
                 </item>
                 <item row="1" column="0">
@@ -2592,7 +2604,7 @@ QPushButton:checked{
                 </item>
                 <item row="1" column="3">
                  <property name="text">
-                  <string>明天</string>
+                  <string/>
                  </property>
                 </item>
                </widget>
@@ -2685,7 +2697,7 @@ QPushButton:checked{
                 </item>
                 <item row="0" column="3">
                  <property name="text">
-                  <string>发工资</string>
+                  <string/>
                  </property>
                 </item>
                 <item row="1" column="0">
@@ -2705,7 +2717,7 @@ QPushButton:checked{
                 </item>
                 <item row="1" column="3">
                  <property name="text">
-                  <string>发工资</string>
+                  <string/>
                  </property>
                 </item>
                </widget>
@@ -2720,6 +2732,9 @@ QPushButton:checked{
          <layout class="QHBoxLayout" name="horizontalLayout_45">
           <item>
            <widget class="QStackedWidget" name="stackedWidget_3">
+            <property name="currentIndex">
+             <number>1</number>
+            </property>
             <widget class="QWidget" name="page_9">
              <layout class="QHBoxLayout" name="horizontalLayout_49">
               <item>
@@ -3224,11 +3239,11 @@ QPushButton:pressed{
    <slot>open_add_course_page()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1059</x>
+     <x>967</x>
      <y>59</y>
     </hint>
     <hint type="destinationlabel">
-     <x>1088</x>
+     <x>941</x>
      <y>156</y>
     </hint>
    </hints>
@@ -3288,11 +3303,11 @@ QPushButton:pressed{
    <slot>search_student()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>935</x>
-     <y>135</y>
+     <x>881</x>
+     <y>151</y>
     </hint>
     <hint type="destinationlabel">
-     <x>955</x>
+     <x>941</x>
      <y>5</y>
     </hint>
    </hints>
@@ -3304,8 +3319,8 @@ QPushButton:pressed{
    <slot>search_student()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>862</x>
-     <y>139</y>
+     <x>795</x>
+     <y>153</y>
     </hint>
     <hint type="destinationlabel">
      <x>823</x>
@@ -3320,11 +3335,11 @@ QPushButton:pressed{
    <slot>refresh_all_student()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1004</x>
-     <y>140</y>
+     <x>967</x>
+     <y>151</y>
     </hint>
     <hint type="destinationlabel">
-     <x>1071</x>
+     <x>941</x>
      <y>8</y>
     </hint>
    </hints>
@@ -3336,12 +3351,76 @@ QPushButton:pressed{
    <slot>open_add_teacher_page()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>969</x>
+     <x>941</x>
      <y>52</y>
     </hint>
     <hint type="destinationlabel">
-     <x>1003</x>
-     <y>-8</y>
+     <x>941</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_14</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>save_welcome_msg()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>323</x>
+     <y>65</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>941</x>
+     <y>324</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_15</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>save_false_students_num()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>323</x>
+     <y>65</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>941</x>
+     <y>427</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_16</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>save_wechat()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>894</x>
+     <y>333</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>964</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_8</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>reload_admin_data()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>937</x>
+     <y>304</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>964</x>
+     <y>345</y>
     </hint>
    </hints>
   </connection>
@@ -3362,5 +3441,9 @@ QPushButton:pressed{
   <slot>search_student()</slot>
   <slot>refresh_all_student()</slot>
   <slot>open_add_teacher_page()</slot>
+  <slot>save_welcome_msg()</slot>
+  <slot>save_false_students_num()</slot>
+  <slot>save_wechat()</slot>
+  <slot>reload_admin_data()</slot>
  </slots>
 </ui>
